@@ -1,9 +1,12 @@
 // layout
-@import "./common/normalize.scss";
+@import "common/normalize.scss";
 @import "common/fonts.scss";
 @import "common/layout.scss";
 // header
 @import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/nav.scss";
+@import "blocks/phone.scss";
 // main
 @import "blocks/main.scss";
 // footer
