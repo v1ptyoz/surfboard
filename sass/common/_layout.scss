@@ -40,3 +40,20 @@ img {
 .wrapper {}
 
 .wrapper__content {}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 702px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 460px;
+    }
+}
