@@ -1,0 +1,23 @@
+.header {
+    background: url("../../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 24px 0 65px 0;
+}
+
+.header__topline {
+    display: grid;
+    grid-template-columns: 1fr 7fr 2fr;
+    align-items: center;
+    white-space: nowrap;
+    margin-bottom: 102px;
+}
+
+.header__logo {
+    justify-self: start;
+}
+
+.header__phone {
+    justify-self: end;
+}

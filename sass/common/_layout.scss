@@ -4,6 +4,8 @@
 
 html {
     box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 a {
@@ -34,7 +36,6 @@ ul {
 img {
     display: inline-block;
     vertical-align: middle;
-    min-width: 100%;
 }
 
 .wrapper {}
