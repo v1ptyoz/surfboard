@@ -1,0 +1,30 @@
+.feature {
+    text-align: center;
+}
+
+.feature__img {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    background-color: #F2F5F4;
+    border-radius: 50%;
+}
+
+.feature__img img {
+    transform: translateY(50%);
+}
+
+.feature__title {
+    font-weight: bold;
+    font-size: 2.7rem;
+    color: #292929;
+    margin-top: 20px;
+}
+
+.feature__text {
+    margin-top: 20px;
+    color: #666666;
+    font-weight: 300;
+    font-size: 1.8rem;
+    padding: 0 13px;
+}
