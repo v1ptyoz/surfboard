@@ -1,0 +1,34 @@
+.table {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    padding: 18px 13px 18px 14px;
+    text-align: left;
+    text-transform: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000;
+    table-layout: fixed;
+    width: 273px;
+    white-space: nowrap;
+}
+
+.table__image {
+    padding: 10px 0;
+    text-align: center;
+    width: 10%;
+}
+
+.table__option {
+    padding: 10px 0;
+    text-align: left;
+    padding-left: 12px;
+}
+
+.table__value {
+    padding: 10px 0;
+    text-align: right;
+}

@@ -1,0 +1,10 @@
+.shop {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    align-items: center;
+    gap: 55px;
+}
+
+.shop__arrow {
+    margin-left: 10%;
+}
