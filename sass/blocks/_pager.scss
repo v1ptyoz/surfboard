@@ -1,0 +1,24 @@
+.pager {}
+
+.pager__list {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    overflow: hidden;
+}
+
+.pager__link {
+    display: block;
+    border: 6px solid transparent;
+    border-radius: 50%;
+}
+
+.pager__img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.pager__link--active {
+    border: 6px solid #FEDB3F;
+}

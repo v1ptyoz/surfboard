@@ -1,6 +1,5 @@
 .section {
     padding-top: 66px;
-    padding-bottom: 104px;
 }
 
 .section__title {
@@ -9,6 +8,10 @@
     font-size: 4.8rem;
     text-transform: uppercase;
     text-align: center;
+}
+
+.section__title--white {
+    color: #ffffff;
 }
 
 .section__subtitle {
