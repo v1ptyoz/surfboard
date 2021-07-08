@@ -19,6 +19,7 @@
     border-radius: 50%;
 }
 
-.pager__link--active {
+.pager__link--active,
+.pager__link:hover {
     border: 6px solid #FEDB3F;
 }
