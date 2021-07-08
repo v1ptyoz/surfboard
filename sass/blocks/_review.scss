@@ -1,0 +1,28 @@
+.review {
+    background-color: #F8FAF9;
+    margin-top: 32px;
+    padding: 42px 142px 42px 42px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.review__header {
+    color: #292929;
+    font-weight: bold;
+    font-size: 2.7rem;
+    margin-bottom: 14px;
+}
+
+.review__text {
+    font-size: 1.8rem;
+    color: #666666;
+    margin-bottom: 3px;
+}
+
+.review__author {
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #292929;
+}
