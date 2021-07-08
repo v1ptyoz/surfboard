@@ -11,7 +11,7 @@
 }
 
 .team__item:hover .team__header::after {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
 }
 
 .team__item:hover .team__prof,
@@ -41,6 +41,7 @@
     width: 9px;
     height: 9px;
     margin-left: 4px;
+    transition: transform .3s ease;
 }
 
 .team__prof {
