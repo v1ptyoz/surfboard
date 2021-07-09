@@ -1,0 +1,40 @@
+.catalog {
+    background: url("../../img/catalog-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #ffffff;
+    height: 652px;
+}
+
+.catalog .section__title {
+    text-align: left;
+}
+
+.catalog__overlay {
+    @extend .overlay;
+    margin-top: -66px;
+}
+
+.catalog__title {
+    color: #ffffff;
+}
+
+.catalog__list {
+    position: absolute;
+    bottom: 0;
+}
+
+.catalog__item {}
+
+.catalog__header {
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+.catalog__content {
+    background: rgba(51, 53, 55, 0.9);
+}
+
+.catalog__text {}
