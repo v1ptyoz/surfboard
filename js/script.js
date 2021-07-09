@@ -37,11 +37,54 @@ document.addEventListener('DOMContentLoaded', function() {
             showGrid(slides[slideIndex - 1]);
         });
     }
+
     slider();
+
+    function reviewSlider() {
+        function setActive(element) {
+            element.classList.add("pager__link--active");
+        }
+
+        function hideActive() {
+            pagers.forEach(element => {
+                element.classList.remove("pager__link--active");
+            });
+        }
+        let reviewIndex = 1;
+        let reviews = document.querySelectorAll('.reviews__item');
+        let pagers = document.querySelectorAll('.pager__link');
+
+        reviews.forEach(element => {
+            hide(element);
+        })
+        showFlex(reviews[reviewIndex - 1]);
+        setActive(pagers[reviewIndex - 1]);
+
+        pagers.forEach((element, key) => {
+            element.addEventListener('click', (event) => {
+                event.preventDefault();
+                reviewIndex = key + 1;
+
+                reviews.forEach(element => {
+                    hide(element);
+                })
+                hideActive();
+                showFlex(reviews[reviewIndex - 1]);
+                setActive(pagers[reviewIndex - 1]);
+            })
+        });
+
+    }
+
+    reviewSlider();
 
 
     function showGrid(element) {
         element.style.display = 'grid';
+    }
+
+    function showFlex(element) {
+        element.style.display = 'flex';
     }
 
     function hide(element) {
