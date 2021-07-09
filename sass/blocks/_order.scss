@@ -1,0 +1,12 @@
+.order {
+    background-image: url("../../img/order_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.order__overlay {
+    @extend .overlay;
+    background: rgba(0, 0, 0, .6);
+    margin-top: -66px;
+}
