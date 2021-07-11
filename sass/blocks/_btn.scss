@@ -8,6 +8,12 @@
     font-size: 1.6rem;
     text-transform: uppercase;
     cursor: pointer;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.btn:focus {
+    outline: 3px solid #FFD517;
 }
 
 .btn:hover {

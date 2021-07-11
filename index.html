@@ -15,7 +15,7 @@
 <body>
     <div class="wrapper">
         <div class="wrapper__content">
-            <header class="header">
+            <header class="section header">
                 <div class="container header__container">
                     <div class="header__topline">
                         <div class="header__logo logo">
@@ -54,25 +54,25 @@
                         <h1 class="hero__title">Профессиональные доски для <br>серфинга</h1>
                         <p class="hero__subtitle">Самый большой выбор серфбордов в мире</p>
                         <a href="#" class="btn">Заказать</a>
-                        <div class="hero__benefits benefits">
-                            <ul class="benefits__list">
-                                <li class="benefits__item">
-                                    <img src="img/board.svg" alt="board" width="41" height="41">Уникальный дизайн
-                                </li>
-                                <li class="benefits__item">
-                                    <img src="img/table.svg" alt="board" width="41" height="41">Прочные материалы
-                                </li>
-                                <li class="benefits__item">
-                                    <img src="img/car.svg" alt="board" width="41" height="41">Быстрая доставка
-                                </li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div class="benefits">
+                        <ul class="benefits__list">
+                            <li class="benefits__item">
+                                <img src="img/board.svg" alt="board" width="41" height="41">Уникальный дизайн
+                            </li>
+                            <li class="benefits__item">
+                                <img src="img/table.svg" alt="board" width="41" height="41">Прочные материалы
+                            </li>
+                            <li class="benefits__item">
+                                <img src="img/car.svg" alt="board" width="41" height="41">Быстрая доставка
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </header>
             <main class="main">
-                <div class="container">
-                    <section class="section features">
+                <section class="section features">
+                    <div class="container">
                         <h2 class="section__title">почему Surfboard?</h2>
                         <h4 class="section__subtitle">Мы создаем уникальные и качественные доски из прочных и экологичных материалов.</h4>
                         <ul class="features__list">
@@ -100,8 +100,8 @@
                                 <p class="feature__text">Вы станете обладателем уникального серфборда. Доска будет выполнена по вашему уникальному дизайну. </p>
                             </li>
                         </ul>
-                    </section>
-                </div>
+                    </div>
+                </section>
                 <section class="section section--gray">
                     <div class="container">
                         <div class="shop">
@@ -274,7 +274,7 @@
                         </div>
                     </div>
                 </section>
-                <div class="section">
+                <section class="section">
                     <div class="container">
                         <div class="team">
                             <h2 class="section__title">Команда</h2>
@@ -322,7 +322,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </section>
                 <!-- <div class="section catalog">
                     <div class="catalog__overlay">
                         <div class="container">
@@ -359,7 +359,7 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="section">
+                <section class="section">
                     <div class="container">
                         <h2 class="section__title">Отзывы</h2>
                         <div class="reviews">
@@ -424,86 +424,84 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="section section--gray">
+                </section>
+                <section class="section section--gray">
                     <div class="container">
                         <h2 class="section__title">Как мы работаем</h2>
                         <div class="video">
                             <iframe width="662" height="391" src="https://www.youtube.com/embed/rV57ONT0VPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
-                </div>
-                <div class="section order">
-                    <div class="order__overlay">
-                        <div class="container">
-                            <h2 class="section__title section__title--white">закажите доску</h2>
-                            <form action="#" class="order__form form">
-                                <div class="form__col">
-                                    <div class="form__row">
-                                        <label class="form__item">
-                                            <div class="form__label">Имя</div>
-                                            <input class="form__input" type="text" name="name" id="name">
-                                        </label>
-                                        <label class="form__item">
-                                            <div class="form__label">Телефон</div>
-                                            <input class="form__input" type="text" name="tel" id="tel">
-                                        </label>
-                                    </div>
-                                    <div class="form__row">
-                                        <label class="form__item">
-                                            <div class="form__label">Улица</div>
-                                            <input class="form__input" type="text" name="street" id="street">
-                                        </label>
-                                    </div>
-                                    <div class="form__row">
-                                        <label class="form__item">
-                                            <div class="form__label">Дом</div>
-                                            <input class="form__input" type="text" name="house" id="house">
-                                        </label>
-                                        <label class="form__item">
-                                            <div class="form__label">Корпус</div>
-                                            <input class="form__input" type="text" name="corps" id="corps">
-                                        </label>
-                                        <label class="form__item">
-                                            <div class="form__label">Квартира</div>
-                                            <input class="form__input" type="text" name="flat" id="flat">
-                                        </label>
-                                        <label class="form__item">
-                                            <div class="form__label">Этаж</div>
-                                            <input class="form__input" type="text" name="floor" id="floor">
-                                        </label>
-                                    </div>
+                </section>
+                <section class="section order">
+                    <div class="container order__container">
+                        <h2 class="section__title section__title--white">закажите доску</h2>
+                        <form action="#" class="order__form form">
+                            <div class="form__col">
+                                <div class="form__row">
+                                    <label class="form__item">
+                                        <div class="form__label">Имя</div>
+                                        <input class="form__input" type="text" name="name" id="name">
+                                    </label>
+                                    <label class="form__item">
+                                        <div class="form__label">Телефон</div>
+                                        <input class="form__input" type="text" name="tel" id="tel">
+                                    </label>
                                 </div>
-                                <div class="form__col">
-                                    <div class="form__row">
-                                        <label class="form__item">
-                                            <div class="form__label">Комментарий</div>
-                                            <textarea class="form__input form__input--textarea" name="comment" id="comment"></textarea>
-                                        </label>
-                                    </div>
-                                    <div class="form__row form__controls">
-                                        <label class="form__item form__radio">
-                                            <input type="radio" name="pay" id="cash" checked>
-                                            <div class="form__label">Оплата наличными</div>
-                                        </label>
-                                        <label class="form__item form__radio">
-                                            <input type="radio" name="pay" id="card">
-                                            <div class="form__label">Оплата картой</div>
-                                        </label>
-                                        <label class="form__item form__checkbox">
-                                            <input type="checkbox" name="no-call " id="no-call">
-                                            <div class="form__label ">Не перезванивать</div>
-                                        </label>
-                                    </div>
-                                    <div class="form__row ">
-                                        <button type="submit " class="btn ">Отправить</button>
-                                        <button type="reset " class="btn form__reset">Очистить</button>
-                                    </div>
+                                <div class="form__row">
+                                    <label class="form__item">
+                                        <div class="form__label">Улица</div>
+                                        <input class="form__input" type="text" name="street" id="street">
+                                    </label>
                                 </div>
-                            </form>
-                        </div>
+                                <div class="form__row">
+                                    <label class="form__item">
+                                        <div class="form__label">Дом</div>
+                                        <input class="form__input" type="text" name="house" id="house">
+                                    </label>
+                                    <label class="form__item">
+                                        <div class="form__label">Корпус</div>
+                                        <input class="form__input" type="text" name="corps" id="corps">
+                                    </label>
+                                    <label class="form__item">
+                                        <div class="form__label">Квартира</div>
+                                        <input class="form__input" type="text" name="flat" id="flat">
+                                    </label>
+                                    <label class="form__item">
+                                        <div class="form__label">Этаж</div>
+                                        <input class="form__input" type="text" name="floor" id="floor">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__col">
+                                <div class="form__row">
+                                    <label class="form__item">
+                                        <div class="form__label">Комментарий</div>
+                                        <textarea class="form__input form__input--textarea" name="comment" id="comment"></textarea>
+                                    </label>
+                                </div>
+                                <div class="form__row form__controls">
+                                    <label class="form__item form__radio">
+                                        <input type="radio" name="pay" id="cash" checked>
+                                        <div class="form__label">Оплата наличными</div>
+                                    </label>
+                                    <label class="form__item form__radio">
+                                        <input type="radio" name="pay" id="card">
+                                        <div class="form__label">Оплата картой</div>
+                                    </label>
+                                    <label class="form__item form__checkbox">
+                                        <input type="checkbox" name="no-call " id="no-call">
+                                        <div class="form__label ">Не перезванивать</div>
+                                    </label>
+                                </div>
+                                <div class="form__row ">
+                                    <button type="submit " class="btn ">Отправить</button>
+                                    <button type="reset " class="btn form__reset">Очистить</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                </div>
+                </section>
             </main>
             <footer class="footer "></footer>
             <div class="page-nav ">

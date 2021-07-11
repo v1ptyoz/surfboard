@@ -5,8 +5,16 @@
     color: #ffffff;
 }
 
-.order__overlay {
-    @extend .overlay;
+.order::before {
+    width: 100%;
+    height: 100%;
+    content: '';
     background: rgba(0, 0, 0, .6);
-    margin-top: -66px;
+    padding: inherit;
+    position: absolute;
+}
+
+.order__container {
+    position: relative;
+    z-index: 2;
 }

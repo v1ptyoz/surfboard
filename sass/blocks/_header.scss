@@ -6,6 +6,12 @@
     padding: 24px 0 0 0;
 }
 
+.header__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .header__topline {
     display: grid;
     grid-template-columns: 1fr 7fr 2fr;
