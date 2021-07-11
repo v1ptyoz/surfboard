@@ -1,0 +1,21 @@
+.radio {
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-right: 10px;
+    position: relative;
+}
+
+.radio::before {
+    content: "";
+    display: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #FEDB3F;
+    position: absolute;
+    transform: translateX(calc(50% - 1px));
+}

@@ -1,0 +1,21 @@
+.check {
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin-right: 10px;
+}
+
+.check::before {
+    content: '';
+    display: none;
+    width: 10px;
+    height: 9px;
+    background-image: url("../img/checked.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translateX(calc(50% + 2px));
+}

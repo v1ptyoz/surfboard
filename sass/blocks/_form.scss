@@ -62,41 +62,18 @@
         appearance: none;
     }
     .form__label {
-        display: inline;
+        display: flex;
+        align-items: center;
         border: 3px solid transparent;
-        position: relative;
-        &::before {
-            content: '';
-            display: inline-block;
-            vertical-align: middle;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            background-color: #ffffff;
-            margin-right: 10px;
-        }
-        &::after {
-            content: '';
-            display: none;
-            vertical-align: middle;
-            width: 13px;
-            height: 13px;
-            border-radius: 50%;
-            background-color: #FEDB3F;
-            position: absolute;
-            left: 0;
-            top: 0;
-            transform: translate(6px, 5px);
-        }
     }
 }
 
-.form__radio input:checked+.form__label::after {
-    display: inline-block;
+.form__radio input:checked+.form__label>.radio::before {
+    display: inline;
 }
 
-.form__checkbox input:checked+.form__label::after {
-    display: inline-block;
+.form__checkbox input:checked+.form__label>.check::before {
+    display: inline;
 }
 
 .form__checkbox {
@@ -106,33 +83,8 @@
         appearance: none;
     }
     .form__label {
-        display: inline-block;
-        position: relative;
+        display: flex;
         border: 3px solid transparent;
-        &::before {
-            content: '';
-            display: inline-block;
-            vertical-align: middle;
-            width: 25px;
-            height: 25px;
-            border-radius: 4px;
-            background-color: #ffffff;
-            margin-right: 10px;
-        }
-        &::after {
-            content: '';
-            display: none;
-            vertical-align: middle;
-            width: 10px;
-            height: 9px;
-            background-image: url("../img/checked.svg");
-            background-position: center;
-            background-repeat: no-repeat;
-            position: absolute;
-            left: 0;
-            top: 0;
-            transform: translate(7px, 8px);
-        }
     }
 }
 
