@@ -27,3 +27,32 @@
 .header__phone {
     justify-self: end;
 }
+
+.header__menu-icon {
+    display: none;
+    justify-self: end;
+}
+
+@media (max-width: 940px) {
+    .header {
+        background-position: left 100% top 50px;
+    }
+    .header__topline {
+        grid-template-columns: 1fr 1fr;
+        background-color: #1968B1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 2.4rem;
+    }
+    .header__menu-icon {
+        display: block;
+    }
+    .header__phone {
+        display: none;
+    }
+    .header__nav {
+        display: none;
+    }
+}

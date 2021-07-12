@@ -10,11 +10,24 @@
 .hero__title {
     text-transform: uppercase;
     font-size: 4.8rem;
-    padding-right: 30rem;
+    padding-right: 57rem;
     margin-bottom: 1.8rem;
 }
 
 .hero__subtitle {
     font-size: 2.1rem;
     margin-bottom: 4rem;
+}
+
+@media (max-width: 940px) {
+    .hero {
+        text-align: center;
+        align-items: center;
+    }
+    .hero__title {
+        padding-right: 0;
+    }
+    .hero__subtitle {
+        padding-right: 0;
+    }
 }

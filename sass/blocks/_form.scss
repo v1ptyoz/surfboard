@@ -52,12 +52,15 @@
     .form__item {
         flex: 0;
     }
-    margin-bottom: 4.4rem;
-    flex-wrap: wrap;
+}
+
+.form__buttons {
+    margin-top: 4.4rem;
 }
 
 .form__radio {
     cursor: pointer;
+    margin-bottom: 0;
     input {
         appearance: none;
     }
@@ -115,5 +118,27 @@
 .form__controls {
     input:focus+.form__label {
         outline: .3rem solid #FEDB3F;
+    }
+}
+
+@media (max-width: 940px) {
+    .form {
+        flex-direction: column;
+    }
+    .form__col {
+        margin-right: 0;
+    }
+    .form__row {
+        margin-bottom: .5rem;
+    }
+    .form__checkbox {
+        flex: 1;
+    }
+    .form__controls {
+        margin-bottom: 0;
+    }
+    .form__buttons {
+        align-items: center;
+        justify-content: center;
     }
 }

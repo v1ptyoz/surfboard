@@ -36,6 +36,7 @@ ul {
 img {
     display: inline-block;
     vertical-align: middle;
+    min-width: 100%;
 }
 
 .wrapper {}
@@ -43,18 +44,22 @@ img {
 .wrapper__content {}
 
 .container {
-    max-width: 94rem;
+    max-width: 110rem;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
-@media (max-width: 76.8rem) {
+@media (max-width: 992px) {
     .container {
-        max-width: 70.2rem;
+        max-width: 940px;
+        padding: 0 1rem;
     }
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 940px) {
     .container {
-        max-width: 46rem;
+        max-width: 768px;
     }
 }
+
+@media (max-width: 480px) {}

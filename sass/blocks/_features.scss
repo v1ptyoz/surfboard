@@ -24,3 +24,9 @@
 .features__item:last-child::after {
     display: none;
 }
+
+@media (max-width: 940px) {
+    .features__item::after {
+        display: none;
+    }
+}

@@ -35,3 +35,9 @@
 .page-nav__item--active {
     border: .2rem solid #ffffff;
 }
+
+@media (max-width: 940px) {
+    .page-nav {
+        display: none;
+    }
+}

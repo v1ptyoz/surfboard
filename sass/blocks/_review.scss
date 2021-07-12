@@ -7,6 +7,11 @@
     align-items: center;
 }
 
+.review__photo img {
+    width: 253px;
+    height: 264px;
+}
+
 .review__header {
     color: #292929;
     font-weight: bold;
@@ -25,4 +30,17 @@
     font-weight: 500;
     font-size: 1.8rem;
     color: #292929;
+}
+
+@media (max-width: 940px) {
+    .review {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 56px 24px 46px 24px;
+        text-align: center;
+    }
+    .review__photo img {
+        width: 130px;
+        height: 130px;
+    }
 }
