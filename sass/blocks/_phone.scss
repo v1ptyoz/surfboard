@@ -7,10 +7,10 @@
 .phone__link::before {
     content: "";
     display: inline-block;
-    width: 13px;
-    height: 14px;
+    width: 1.3rem;
+    height: 1.4rem;
     background-image: url("../img/phone-icon.svg");
     background-repeat: no-repeat;
     vertical-align: middle;
-    margin-right: 5px;
+    margin-right: .5rem;
 }

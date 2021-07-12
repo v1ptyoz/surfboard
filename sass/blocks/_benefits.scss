@@ -1,13 +1,13 @@
 .benefits {
     color: #ffffff;
-    margin-top: 64px;
-    padding-bottom: 65px;
+    margin-top: 6.4rem;
+    padding-bottom: 6.5rem;
 }
 
 .benefits__list {
     display: grid;
     grid-template-columns: repeat(3, min-content);
-    gap: 30px;
+    gap: 3rem;
 }
 
 .benefits__item {
@@ -15,5 +15,5 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 11px;
+    gap: 1.1rem;
 }

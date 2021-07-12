@@ -43,18 +43,18 @@ img {
 .wrapper__content {}
 
 .container {
-    max-width: 940px;
+    max-width: 94rem;
     margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 76.8rem) {
     .container {
-        max-width: 702px;
+        max-width: 70.2rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 48rem) {
     .container {
-        max-width: 460px;
+        max-width: 46rem;
     }
 }

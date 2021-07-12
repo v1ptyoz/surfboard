@@ -2,20 +2,20 @@
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    right: 50px;
+    right: 5rem;
 }
 
 .page-nav__list {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 1.4rem;
 }
 
 .page-nav__item {
-    width: 16px;
-    height: 16px;
+    width: 1.6rem;
+    height: 1.6rem;
     background-color: transparent;
-    border: 2px solid transparent;
+    border: .2rem solid transparent;
     border-radius: 50%;
     cursor: pointer;
     text-align: center;
@@ -23,15 +23,15 @@
 
 .page-nav__link {
     display: inline-block;
-    width: 6px;
-    height: 6px;
+    width: .6rem;
+    height: .6rem;
     background-color: #ffffff;
     border-radius: 50%;
-    transform: translateY(1px);
+    transform: translateY(.1rem);
 }
 
 .page-nav__item:hover,
 .page-nav__item:focus,
 .page-nav__item--active {
-    border: 2px solid #ffffff;
+    border: .2rem solid #ffffff;
 }

@@ -1,12 +1,12 @@
 .form {
-    margin-top: 60px;
+    margin-top: 6rem;
     display: flex;
     font-size: 1.8rem;
 }
 
 .form__col {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 2rem;
     &:last-child {
         margin-right: 0;
     }
@@ -18,12 +18,12 @@
 
 .form__item {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 2rem;
     white-space: nowrap;
     &:last-child {
         margin-right: 0;
     }
-    margin-bottom: 12px;
+    margin-bottom: 1.2rem;
 }
 
 .form__label {}
@@ -32,27 +32,27 @@
     box-sizing: border-box;
     width: 100%;
     border: none;
-    padding: 18px 11px;
+    padding: 1.8rem 1.1rem;
     border-radius: 4px;
-    border: 3px solid transparent;
+    border: .3rem solid transparent;
     outline: none;
 }
 
 .form__input--textarea {
     resize: none;
-    height: 170px;
+    height: 17rem;
 }
 
 .form__input:focus,
 .form__input:active {
-    border: 3px solid #FEDB3F;
+    border: .3rem solid #FEDB3F;
 }
 
 .form__controls {
     .form__item {
         flex: 0;
     }
-    margin-bottom: 44px;
+    margin-bottom: 4.4rem;
     flex-wrap: wrap;
 }
 
@@ -64,7 +64,7 @@
     .form__label {
         display: flex;
         align-items: center;
-        border: 3px solid transparent;
+        border: .3rem solid transparent;
     }
 }
 
@@ -84,7 +84,7 @@
     }
     .form__label {
         display: flex;
-        border: 3px solid transparent;
+        border: .3rem solid transparent;
     }
 }
 
@@ -97,10 +97,10 @@
     font-size: 1.8rem;
     text-transform: none;
     font-weight: normal;
-    margin-right: 22px;
+    margin-right: 2.2rem;
     outline: none;
     border: none;
-    margin-left: 22px;
+    margin-left: 2.2rem;
 }
 
 .form__reset:hover {
@@ -109,11 +109,11 @@
 }
 
 .form__reset:focus {
-    outline: 3px solid #FEDB3F;
+    outline: .3rem solid #FEDB3F;
 }
 
 .form__controls {
     input:focus+.form__label {
-        outline: 3px solid #FEDB3F;
+        outline: .3rem solid #FEDB3F;
     }
 }

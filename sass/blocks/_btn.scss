@@ -1,6 +1,6 @@
 .btn {
     display: inline-block;
-    padding: 21px 41px;
+    padding: 2.1rem 4.1rem;
     color: #000000;
     background-color: #FEDB3F;
     border-radius: 100px;
@@ -8,12 +8,12 @@
     font-size: 1.6rem;
     text-transform: uppercase;
     cursor: pointer;
-    border: 1px solid transparent;
+    border: .1rem solid transparent;
     outline: none;
 }
 
 .btn:focus {
-    outline: 3px solid #FFD517;
+    outline: .3rem solid #FFD517;
 }
 
 .btn:hover {

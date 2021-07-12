@@ -1,13 +1,13 @@
 .team__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-top: 53px;
+    gap: 2rem;
+    margin-top: 5.3rem;
 }
 
 .team__item {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 
 .team__item:hover .team__header::after {
@@ -20,7 +20,7 @@
 }
 
 .team__img {
-    margin-bottom: 21px;
+    margin-bottom: 2.1rem;
 }
 
 .team__content {
@@ -29,7 +29,7 @@
 
 .team__header {
     font-size: 2.1rem;
-    margin-bottom: 8px;
+    margin-bottom: .8rem;
 }
 
 .team__header::after {
@@ -38,9 +38,9 @@
     background-image: url("../img/polygon.svg");
     background-repeat: no-repeat;
     background-position: center;
-    width: 9px;
-    height: 9px;
-    margin-left: 4px;
+    width: .9rem;
+    height: .9rem;
+    margin-left: .4rem;
     transition: transform .3s ease;
 }
 
@@ -48,7 +48,7 @@
     opacity: 0;
     font-weight: 400;
     font-size: 1.8rem;
-    margin-bottom: 4px;
+    margin-bottom: .4rem;
     transition: opacity .3s ease;
 }
 

@@ -1,13 +1,13 @@
 .features {
-    padding-top: 105px;
+    padding-top: 10.5rem;
 }
 
 .features__list {
-    margin-top: 50px;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: top;
-    margin-bottom: 112px;
+    margin-bottom: 11.2rem;
 }
 
 .features__item {
@@ -17,8 +17,8 @@
 .features__item::after {
     content: url('../img/features-separator.svg');
     position: absolute;
-    top: 60px;
-    right: -34px;
+    top: 6rem;
+    right: -3.4rem;
 }
 
 .features__item:last-child::after {
