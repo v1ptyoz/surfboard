@@ -31,3 +31,12 @@
         padding-right: 0;
     }
 }
+
+@media (max-width: 768px) {
+    .hero__title {
+        font-size: 4rem;
+    }
+    .hero__subtitle {
+        font-size: 1.8rem;
+    }
+}

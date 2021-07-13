@@ -34,3 +34,12 @@
         padding: 0 16rem;
     }
 }
+
+@media (max-width: 768px) {
+    .section__subtitle {
+        padding: 0 2rem;
+    }
+    .section__title {
+        font-size: 4rem;
+    }
+}
