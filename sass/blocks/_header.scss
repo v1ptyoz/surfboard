@@ -13,8 +13,8 @@
 }
 
 .header__topline {
-    display: grid;
-    grid-template-columns: 1fr 7fr 2fr;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
     white-space: nowrap;
     margin-bottom: 10.2rem;
@@ -43,7 +43,7 @@
         background-position: left 100% top 50px;
     }
     .header__topline {
-        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
         background-color: #1968B1;
         position: absolute;
         top: 0;
