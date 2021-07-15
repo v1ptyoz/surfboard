@@ -29,13 +29,13 @@
     background-color: #F8FAF9;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 768px) {
     .section__subtitle {
         padding: 0 16rem;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .section__subtitle {
         padding: 0 2rem;
     }

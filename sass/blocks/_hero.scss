@@ -19,7 +19,7 @@
     margin-bottom: 4rem;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 768px) {
     .hero {
         text-align: center;
         align-items: center;
@@ -32,7 +32,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .hero__title {
         font-size: 4rem;
     }

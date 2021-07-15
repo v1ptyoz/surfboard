@@ -44,19 +44,20 @@ img {
 .wrapper__content {}
 
 .container {
+    width: 95%;
     max-width: 940px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 768px) {
     .container {
         max-width: 768px;
         padding: 0 1rem;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .container {
         max-width: 480px;
         padding: 0 .5rem;
