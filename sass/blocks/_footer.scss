@@ -20,6 +20,9 @@
         color: #292929;
         font-weight: normal;
     }
+    .phone__link::before {
+        fill: #292929;
+    }
 }
 
 .footer__map img {

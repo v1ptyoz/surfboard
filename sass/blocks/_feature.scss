@@ -6,12 +6,14 @@
 }
 
 .feature__img {
-    display: inline-block;
-    // width: 14rem;
-    // height: 14rem;
+    // display: inline-block;
     padding: 30px;
     background-color: #F2F5F4;
     border-radius: 50%;
+    svg {
+        width: 68px;
+        height: 68px;
+    }
 }
 
 .feature__img img {}

@@ -18,6 +18,12 @@
     gap: 1.1rem;
 }
 
+.benefits__icon {
+    width: 41px;
+    height: 41px;
+    fill: #ffffff;
+}
+
 @media (max-width: 1100px) {
     .benefits {
         display: none;

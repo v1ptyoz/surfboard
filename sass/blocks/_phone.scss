@@ -1,16 +1,22 @@
+.phone {
+    // display: flex;
+    // justify-content: flex-start;
+    // align-items: center;
+}
+
 .phone__link {
     font-weight: bold;
     font-size: 2.2rem;
     color: #ffffff;
 }
 
-.phone__link::before {
-    content: "";
-    display: inline-block;
-    width: 1.3rem;
-    height: 1.4rem;
-    background-image: url("../img/phone-icon.svg");
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-right: .5rem;
+.phone__icon {
+    margin-right: 5px;
+    width: 13px;
+    height: 14px;
+    fill: #ffffff;
+}
+
+.phone__icon--dark {
+    fill: #292929;
 }
