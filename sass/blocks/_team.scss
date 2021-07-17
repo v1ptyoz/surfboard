@@ -1,8 +1,13 @@
+.team__container {
+    padding: 0;
+}
+
 .team__list {
     display: flex;
     align-items: flex-start;
     gap: 2rem;
     margin-top: 5.3rem;
+    flex-wrap: wrap;
 }
 
 .team__item {
@@ -83,4 +88,8 @@
     .team__item:hover>.team__content {
         display: block;
     }
+}
+
+@media (max-width: 768px) {
+    .team__list {}
 }

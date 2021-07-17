@@ -67,3 +67,10 @@
         background-position: left 80% top 50px;
     }
 }
+
+@media (max-width: 320px) {
+    .header__topline {
+        padding: 1.4rem;
+        margin-bottom: 0;
+    }
+}

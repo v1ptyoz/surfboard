@@ -1,27 +1,23 @@
 .order {
-    background-image: url("../img/order_bg.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%), url("../img/order_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;
     position: relative;
 }
 
-.order::before {
-    width: 100%;
-    height: 100%;
-    content: '';
-    background: rgba(0, 0, 0, .6);
-    padding: inherit;
-    position: absolute;
-}
-
-.order__container {
-    position: relative;
-    z-index: 2;
-}
-
 @media (max-width: 768px) {
     .order {
         background-position: left 40% center;
+    }
+}
+
+@media (max-width: 320px) {
+    .order {
+        height: auto;
+        margin-bottom: 0;
+    }
+    .order__container {
+        margin-top: 40px;
     }
 }
