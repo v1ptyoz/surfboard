@@ -2,93 +2,110 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    function slider() {
-        let slideIndex = 1;
-        const slides = document.querySelectorAll('.product');
-        let prev = document.querySelector('.shop__arrow-prev');
-        let next = document.querySelector('.shop__arrow-next');
+    function toggleMenu() {
+        let menu = document.querySelector('.nav--vertical');
+        let menuOpenBtn = document.querySelector('.header__menu-icon');
+        let menuCloseBtn = document.querySelector('.nav__close');
 
-        slides.forEach(element => {
-            hide(element);
-        });
-        showGrid(slides[slideIndex - 1]);
-
-        prev.addEventListener('click', (event) => {
+        menuOpenBtn.addEventListener("click", (event) => {
             event.preventDefault();
-            slideIndex--;
-            if (slideIndex < 1) {
-                slideIndex = slides.length;
-            }
-            slides.forEach(element => {
-                hide(element);
-            });
-            showGrid(slides[slideIndex - 1]);
-        });
-
-        next.addEventListener('click', (event) => {
-            event.preventDefault();
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-            slides.forEach(element => {
-                hide(element);
-            });
-            showGrid(slides[slideIndex - 1]);
-        });
-    }
-
-    slider();
-
-    function reviewSlider() {
-        function setActive(element) {
-            element.classList.add("pager__link--active");
-        }
-
-        function hideActive() {
-            pagers.forEach(element => {
-                element.classList.remove("pager__link--active");
-            });
-        }
-        let reviewIndex = 1;
-        let reviews = document.querySelectorAll('.reviews__item');
-        let pagers = document.querySelectorAll('.pager__link');
-
-        reviews.forEach(element => {
-            hide(element);
+            menu.classList.add('nav-show');
         })
-        showFlex(reviews[reviewIndex - 1]);
-        setActive(pagers[reviewIndex - 1]);
-
-        pagers.forEach((element, key) => {
-            element.addEventListener('click', (event) => {
-                event.preventDefault();
-                reviewIndex = key + 1;
-
-                reviews.forEach(element => {
-                    hide(element);
-                })
-                hideActive();
-                showFlex(reviews[reviewIndex - 1]);
-                setActive(pagers[reviewIndex - 1]);
-            })
-        });
-
+        menuCloseBtn.addEventListener("click", (event) => {
+            event.preventDefault();
+            menu.classList.remove('nav-show');
+        })
     }
+    toggleMenu();
+    // function slider() {
+    //     let slideIndex = 1;
+    //     const slides = document.querySelectorAll('.product');
+    //     let prev = document.querySelector('.shop__arrow-prev');
+    //     let next = document.querySelector('.shop__arrow-next');
 
-    reviewSlider();
+    //     slides.forEach(element => {
+    //         hide(element);
+    //     });
+    //     showGrid(slides[slideIndex - 1]);
+
+    //     prev.addEventListener('click', (event) => {
+    //         event.preventDefault();
+    //         slideIndex--;
+    //         if (slideIndex < 1) {
+    //             slideIndex = slides.length;
+    //         }
+    //         slides.forEach(element => {
+    //             hide(element);
+    //         });
+    //         showGrid(slides[slideIndex - 1]);
+    //     });
+
+    //     next.addEventListener('click', (event) => {
+    //         event.preventDefault();
+    //         slideIndex++;
+    //         if (slideIndex > slides.length) {
+    //             slideIndex = 1;
+    //         }
+    //         slides.forEach(element => {
+    //             hide(element);
+    //         });
+    //         showGrid(slides[slideIndex - 1]);
+    //     });
+    // }
+
+    // slider();
+
+    // function reviewSlider() {
+    //     function setActive(element) {
+    //         element.classList.add("pager__link--active");
+    //     }
+
+    //     function hideActive() {
+    //         pagers.forEach(element => {
+    //             element.classList.remove("pager__link--active");
+    //         });
+    //     }
+    //     let reviewIndex = 1;
+    //     let reviews = document.querySelectorAll('.reviews__item');
+    //     let pagers = document.querySelectorAll('.pager__link');
+
+    //     reviews.forEach(element => {
+    //         hide(element);
+    //     })
+    //     showFlex(reviews[reviewIndex - 1]);
+    //     setActive(pagers[reviewIndex - 1]);
+
+    //     pagers.forEach((element, key) => {
+    //         element.addEventListener('click', (event) => {
+    //             event.preventDefault();
+    //             reviewIndex = key + 1;
+
+    //             reviews.forEach(element => {
+    //                 hide(element);
+    //             })
+    //             hideActive();
+    //             showFlex(reviews[reviewIndex - 1]);
+    //             setActive(pagers[reviewIndex - 1]);
+    //         })
+    //     });
+
+    // }
+
+    // reviewSlider();
 
 
-    function showGrid(element) {
-        element.style.display = 'grid';
-    }
+    // function showGrid(element) {
+    //     element.style.display = 'grid';
+    // }
 
-    function showFlex(element) {
-        element.style.display = 'flex';
-    }
+    // function showFlex(element) {
+    //     element.style.display = 'flex';
+    // }
 
-    function hide(element) {
-        element.style.display = 'none';
-    }
+    // function hide(element) {
+    //     element.style.display = 'none';
+    // }
+
+
 
 });
