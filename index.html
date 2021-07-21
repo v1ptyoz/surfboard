@@ -126,26 +126,31 @@
                         </ul>
                     </div>
                 </section>
-                <!-- <section class="section section--gray">
-                    <div class="container">
-                        <div class="shop">
-                            <a href="#" class="shop__arrow shop__arrow-prev">
-                                <img src="img/left.svg" alt="Предыдущий">
-                            </a>
-                            <article class="shop__item product">
-                                <div class="product__image">
-                                    <img src="img/board_1.png" alt="Board 1" width="399" height="539">
-                                </div>
-                                <div class="product__descr">
-                                    <button class="product__btn parameters-btn">
-                                        <img src="img/parameters.svg" alt="Параметры" class="parameters-btn__image" width="38" height="38">
+                <section class="section section--gray shop">
+                    <div class="container shop__container">
+                        <a href="#" class="shop__arrow shop__arrow--prev">
+                            <svg>
+                                    <use xlink:href="img/sprite.svg#left"/>
+                                </svg>
+                        </a>
+                        <article class="shop__item product">
+                            <div class="product__img">
+                                <img src="img/board_1.png" alt="Board 1" class="product__image">
+                            </div>
+                            <div class="product__descr">
+                                <button class="product__btn parameters-btn">
+                                        <svg class="parameters-btn__image">
+                                            <use xlink:href="img/sprite.svg#parameters"/>
+                                        </svg>
                                         <span class="parameters-btn__text">Параметры</span>
                                         <div class="product__info">
                                             <table class="product__table table">
                                                 <tbody>
                                                     <tr>
                                                         <td class="table__image">
-                                                            <img src="img/length.svg" alt="Длина">
+                                                            <svg>
+                                                                <use xlink:href="img/sprite.svg#lenght"/>
+                                                            </svg>
                                                         </td>
                                                         <td class="table__option">
                                                             Длина доски
@@ -154,7 +159,9 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="table__image">
-                                                            <img src="img/width.svg" alt="Длина">
+                                                            <svg>
+                                                                <use xlink:href="img/sprite.svg#width"/>
+                                                            </svg>
                                                         </td>
                                                         <td class="table__option">
                                                             Ширина доски
@@ -163,7 +170,9 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="table__image">
-                                                            <img src="img/thickness.svg" alt="Длина">
+                                                            <svg>
+                                                                <use xlink:href="img/sprite.svg#thickness"/>
+                                                            </svg>
                                                         </td>
                                                         <td class="table__option">
                                                             Толщина
@@ -172,7 +181,9 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="table__image">
-                                                            <img src="img/lifetime.svg" alt="Длина">
+                                                            <svg>
+                                                                <use xlink:href="img/sprite.svg#lifetime"/>
+                                                            </svg>
                                                         </td>
                                                         <td class="table__option">
                                                             Срок службы
@@ -181,7 +192,9 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="table__image">
-                                                            <img src="img/weight.svg" alt="Длина">
+                                                            <svg>
+                                                                <use xlink:href="img/sprite.svg#weight"/>
+                                                            </svg>
                                                         </td>
                                                         <td class="table__option">
                                                             Вес
@@ -192,40 +205,46 @@
                                             </table>
                                         </div>
                                     </button>
-                                    <h3 class="product__title">Лонгборд 2.0</h3>
-                                    <p class="product__text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать
-                                        по ним.
-                                    </p>
-                                    <div class="product__options options">
-                                        <ul class="options__list">
-                                            <li class="options__item option">
-                                                <p class="option__name">Длина доски</p>
-                                                <p class="option__value">от 2,5 метров</p>
-                                            </li>
-                                            <li class="options__item option">
-                                                <p class="option__name">Ширина доски</p>
-                                                <p class="option__value">от 40 сантиметров</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <p class="product__price">7000 ₽</p>
+                                <h3 class="product__title">Лонгборд 2.0</h3>
+                                <p class="product__text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по
+                                    ним.
+                                </p>
+                                <div class="product__options options">
+                                    <ul class="options__list">
+                                        <li class="options__item option">
+                                            <p class="option__name">Длина доски</p>
+                                            <p class="option__value">от 2,5 метров</p>
+                                        </li>
+                                        <li class="options__item option">
+                                            <p class="option__name">Ширина доски</p>
+                                            <p class="option__value">от 40 сантиметров</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product__price">
+                                    <p>7000 ₽</p>
                                     <a href="#" class="btn">Заказать</a>
                                 </div>
-                            </article>
-                            <article class="shop__item product">
-                                <div class="product__image">
-                                    <img src="img/board_2.png" alt="Board 1" width="399" height="539">
-                                </div>
-                                <div class="product__descr">
-                                    <button class="product__btn parameters-btn">
-                                        <img src="img/parameters.svg" alt="Параметры" class="parameters-btn__image">
+                            </div>
+                        </article>
+                        <article class="shop__item product">
+                            <div class="product__img">
+                                <img src="img/board_2.png" alt="Board 2" class="product__image">
+                            </div>
+                            <div class="product__descr">
+                                <button class="product__btn parameters-btn">
+                                        <svg class="parameters-btn__image">
+                                            <use xlink:href="img/sprite.svg#parameters"/>
+                                        </svg>
                                         <span class="parameters-btn__text">Параметры</span>
                                         <div class="product__info">
                                             <table class="product__table table">
                                                 <tbody>
                                                     <tr>
                                                         <td class="table__image">
-                                                            <img src="img/length.svg" alt="Длина">
+                                                            <svg>
+                                                                <use xlink:href="img/sprite.svg#lenght"/>
+                                                            </svg>
                                                         </td>
                                                         <td class="table__option">
                                                             Длина доски
@@ -234,7 +253,9 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="table__image">
-                                                            <img src="img/width.svg" alt="Длина">
+                                                            <svg>
+                                                                <use xlink:href="img/sprite.svg#width"/>
+                                                            </svg>
                                                         </td>
                                                         <td class="table__option">
                                                             Ширина доски
@@ -243,7 +264,9 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="table__image">
-                                                            <img src="img/thickness.svg" alt="Длина">
+                                                            <svg>
+                                                                <use xlink:href="img/sprite.svg#thickness"/>
+                                                            </svg>
                                                         </td>
                                                         <td class="table__option">
                                                             Толщина
@@ -252,7 +275,9 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="table__image">
-                                                            <img src="img/lifetime.svg" alt="Длина">
+                                                            <svg>
+                                                                <use xlink:href="img/sprite.svg#lifetime"/>
+                                                            </svg>
                                                         </td>
                                                         <td class="table__option">
                                                             Срок службы
@@ -261,7 +286,9 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="table__image">
-                                                            <img src="img/weight.svg" alt="Длина">
+                                                            <svg>
+                                                                <use xlink:href="img/sprite.svg#weight"/>
+                                                            </svg>
                                                         </td>
                                                         <td class="table__option">
                                                             Вес
@@ -272,32 +299,35 @@
                                             </table>
                                         </div>
                                     </button>
-                                    <h3 class="product__title">Шортборд</h3>
-                                    <p class="product__text">Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро набирать скорость, делать различные трюки на волне, включая резкие повороты и развороты, флоатеры (проезды по самому гребню волны), различные
-                                        прыжки с вращениями или без, а также катание в трубах.
-                                    </p>
-                                    <div class="product__options options">
-                                        <ul class="options__list">
-                                            <li class="options__item option">
-                                                <p class="option__name">Длина доски</p>
-                                                <p class="option__value">от 1,5 метров</p>
-                                            </li>
-                                            <li class="options__item option">
-                                                <p class="option__name">Ширина доски</p>
-                                                <p class="option__value">от 30 сантиметров</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <p class="product__price">12000 ₽</p>
+                                <h3 class="product__title">Шортборд</h3>
+                                <p class="product__text">Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро набирать скорость, делать различные трюки на волне, включая резкие повороты и развороты, флоатеры (проезды по самому гребню волны), различные прыжки
+                                    с вращениями или без, а также катание в трубах.
+                                </p>
+                                <div class="product__options options">
+                                    <ul class="options__list">
+                                        <li class="options__item option">
+                                            <p class="option__name">Длина доски</p>
+                                            <p class="option__value">от 1,5 метров</p>
+                                        </li>
+                                        <li class="options__item option">
+                                            <p class="option__name">Ширина доски</p>
+                                            <p class="option__value">от 30 сантиметров</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product__price">
+                                    <p>12000 ₽</p>
                                     <a href="#" class="btn">Заказать</a>
                                 </div>
-                            </article>
-                            <a href="#" class="shop__arrow shop__arrow-next">
-                                <img src="img/right.svg" alt="Следующий">
-                            </a>
-                        </div>
+                            </div>
+                        </article>
+                        <a href="#" class="shop__arrow shop__arrow--next">
+                            <svg>
+                                    <use xlink:href="img/sprite.svg#right"/>
+                                </svg>
+                        </a>
                     </div>
-                </section> -->
+                </section>
                 <section class="section">
                     <div class="container team__container">
                         <div class="team">
