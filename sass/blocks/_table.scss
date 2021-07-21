@@ -2,7 +2,7 @@
     position: absolute;
     top: 0;
     left: 100%;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
     padding: 1.8rem 1.3rem 1.8rem 1.4rem;
@@ -19,7 +19,12 @@
 .table__image {
     padding: 1rem 0;
     text-align: center;
-    width: 10%;
+    width: 14%;
+    svg {
+        width: 32px;
+        height: 32px;
+        fill: #010002;
+    }
 }
 
 .table__option {

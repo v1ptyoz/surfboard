@@ -1,8 +1,10 @@
-.shop {
-    display: grid;
-    grid-template-columns: min-content 1fr min-content;
+.shop__container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 5.5rem;
+    width: 100%;
+    max-width: 98.7rem;
 }
 
 .shop__item {
@@ -10,9 +12,57 @@
 }
 
 .shop__arrow {
-    margin-left: 10%;
+    svg {
+        width: 13px;
+        height: 27px;
+        fill: transparent;
+        stroke: black;
+        stroke-width: 2px;
+        stroke-linecap: round;
+        overflow: hidden;
+    }
+}
+
+.shop__arrow {}
+
+.shop__arrow--prev {
+    margin-right: 30px;
+}
+
+.shop__arrow--next {
+    margin-left: 30px;
 }
 
 @media (max-width: 768px) {
-    .shop {}
+    .shop {
+        position: relative;
+    }
+    .shop__arrow {
+        position: absolute;
+        top: 200px;
+    }
+    .shop__arrow--prev {
+        left: 15%;
+    }
+    .shop__arrow--next {
+        right: 15%;
+    }
+}
+
+@media (max-width: 480px) {
+    .shop {
+        padding-top: 34px;
+        padding-bottom: 100px;
+    }
+    .shop__arrow {
+        top: 180px;
+    }
+    .shop__arrow--prev {
+        margin: 0;
+        left: 20px;
+    }
+    .shop__arrow--next {
+        margin: 0;
+        right: 20px;
+    }
 }

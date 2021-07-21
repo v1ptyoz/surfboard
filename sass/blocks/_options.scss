@@ -3,3 +3,9 @@
     grid-template-columns: repeat(2, min-content);
     gap: 5.5rem;
 }
+
+@media (max-width: 768px) {
+    .options__list {
+        justify-content: center;
+    }
+}
