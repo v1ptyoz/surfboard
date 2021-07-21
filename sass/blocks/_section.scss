@@ -1,5 +1,5 @@
 .section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -30,6 +30,9 @@
 }
 
 @media (max-width: 768px) {
+    .section {
+        min-height: auto;
+    }
     .section__subtitle {
         padding: 0 16rem;
     }

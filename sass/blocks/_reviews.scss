@@ -4,3 +4,9 @@
 }
 
 .reviews__list {}
+
+@media (max-width: 768px) {
+    .reviews__pager {
+        margin-bottom: 18rem;
+    }
+}

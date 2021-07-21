@@ -17,7 +17,7 @@
 .features__item::after {
     content: url('../img/features-separator.svg');
     position: absolute;
-    top: 6rem;
+    top: 3.4rem;
     right: -3.4rem;
 }
 
@@ -26,6 +26,9 @@
 }
 
 @media (max-width: 768px) {
+    .features {
+        margin-bottom: 257px;
+    }
     .features__item::after {
         display: none;
     }
