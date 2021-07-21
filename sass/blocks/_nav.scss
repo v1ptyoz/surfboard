@@ -17,7 +17,7 @@
 }
 
 .nav--vertical {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     background-color: #333537;
@@ -55,5 +55,7 @@
 }
 
 @media (max-width: 768px) {
-    .nav--vertical {}
+    .nav--vertical {
+        display: flex;
+    }
 }
