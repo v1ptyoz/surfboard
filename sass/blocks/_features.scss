@@ -27,7 +27,7 @@
 
 @media (max-width: 768px) {
     .features {
-        margin-bottom: 257px;
+        margin-bottom: 54px;
     }
     .features__item::after {
         display: none;
@@ -35,6 +35,9 @@
 }
 
 @media (max-width: 480px) {
+    .features {
+        margin-bottom: 54px;
+    }
     .features__list {
         flex-direction: column;
     }
