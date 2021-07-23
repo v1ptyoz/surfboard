@@ -11,11 +11,13 @@
     background-repeat: no-repeat;
     background-size: contain;
     width: 50%;
+    overflow: hidden;
     img {
         transform: rotate(30deg);
         max-width: 15rem;
         max-height: 53.5rem;
         object-fit: none;
+        overflow: hidden;
     }
 }
 
@@ -98,7 +100,9 @@
     }
     .product__img {
         max-width: 250px;
+        overflow: visible;
         img {
+            overflow: visible;
             max-width: 11.6rem;
             max-height: 41.4rem;
             object-fit: contain;
