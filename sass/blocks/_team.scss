@@ -14,10 +14,7 @@
     max-width: 220px;
     text-align: center;
     margin-bottom: 6rem;
-}
-
-.team__item:hover .team__header::after {
-    transform: rotate(-180deg);
+    cursor: pointer;
 }
 
 .team__img {
@@ -26,24 +23,33 @@
 
 .team__content {
     color: #292929;
+    overflow: hidden;
+    transition: height .4s ease;
 }
 
 .team__header {
     font-size: 2.1rem;
     margin-bottom: .8rem;
 }
-
-.team__header::after {
-    content: '';
+.team__arrow {
     display: inline-block;
-    background-image: url("../img/polygon.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('../img/polygon.svg');
     width: .9rem;
     height: .9rem;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-left: .4rem;
-    transition: transform .3s ease;
+    transition: transform .5s ease;
 }
+
+.team__content--active {
+    overflow: visible;
+}
+
+.team__arrow--active {
+    transform: rotate(180deg);
+}
+
 
 .team__prof {
     font-weight: 400;
@@ -83,10 +89,6 @@
     .team__content {
         display: none;
         order: 3;
-    }
-    .team__item:hover>.team__img,
-    .team__item:hover>.team__content {
-        display: block;
     }
 }
 
