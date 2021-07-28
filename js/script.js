@@ -123,7 +123,53 @@ document.addEventListener('DOMContentLoaded', function() {
 
     teamHandler();
 
+    function modal() {
+        const modalWrapper = document.querySelector('.modal');
+        const close = document.querySelector('.modal__close');
+        close.addEventListener('click', (e) => {
+            e.preventDefault();
+            modalWrapper.style.display = 'none';
+        });
+        modalWrapper.addEventListener('click', (e) => {
+            if (e.target == modalWrapper) {
+                modalWrapper.style.display = 'none';
+            }
+        })
+    }
+    modal();
 
+    function sendData() {
+        const form = document.querySelector('.form');
+        const modal = document.querySelector('.modal');
+        const modalContent = document.querySelector('.modal__content p');
+        form.addEventListener('submit', event => {
+            event.preventDefault();
+
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+            xhr.setRequestHeader('content-type', 'application/json');
+            xhr.responseType == 'json';
+            const formData = new FormData(form);
+            const data = JSON.stringify(Object.fromEntries(formData.entries()));
+
+            xhr.send(data);
+
+            xhr.addEventListener('load', () => {
+                const res = JSON.parse(xhr.responseText);
+                console.log(res);
+                if (res.status == 1) {
+                    modalContent.textContent = res.message;
+                    showFlex(modal);
+                } else {
+                    modalContent.textContent = res.message || "Что-то пошло не так...";
+                    showFlex(modal);
+                }
+            });
+
+        })
+    }
+
+    sendData();
 
     function showFlex(element) {
         element.style.display = 'flex';

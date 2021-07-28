@@ -500,11 +500,11 @@
                                 <div class="form__row">
                                     <label class="form__item">
                                         <div class="form__label">Имя</div>
-                                        <input class="form__input" type="text" name="name" id="name">
+                                        <input class="form__input" type="text" name="name" id="name" required>
                                     </label>
                                     <label class="form__item">
                                         <div class="form__label">Телефон</div>
-                                        <input class="form__input" type="text" name="tel" id="tel">
+                                        <input class="form__input" type="text" name="phone" id="tel" required>
                                     </label>
                                 </div>
                                 <div class="form__row">
@@ -536,19 +536,19 @@
                                 <div class="form__row">
                                     <label class="form__item">
                                         <div class="form__label">Комментарий</div>
-                                        <textarea class="form__input form__input--textarea" name="comment" id="comment"></textarea>
+                                        <textarea class="form__input form__input--textarea" name="comment" id="comment" required></textarea>
                                     </label>
                                 </div>
                                 <div class="form__row form__controls">
                                     <label class="form__item form__radio">
-                                        <input type="radio" name="pay" id="cash" checked>
+                                        <input type="radio" name="pay" id="cash" value="cash"checked>
                                         <div class="form__label">
                                             <span class="radio"></span>
                                             <p>Оплата наличными</p>
                                         </div>
                                     </label>
                                     <label class="form__item form__radio">
-                                        <input type="radio" name="pay" id="card">
+                                        <input type="radio" name="pay" id="card" value="card">
                                         <div class="form__label">
                                             <span class="radio"></span>
                                             <p>Оплата картой</p>
@@ -565,8 +565,8 @@
                                     </label>
                                 </div>
                                 <div class="form__row form__buttons">
-                                    <button type="submit " class="btn ">Отправить</button>
-                                    <button type="reset " class="btn form__reset">Очистить</button>
+                                    <button type="submit" class="btn">Отправить</button>
+                                    <button type="reset" class="btn form__reset">Очистить</button>
                                 </div>
                             </div>
                         </form>
@@ -682,6 +682,14 @@
                     </li>
                 </ul>
             </nav>
+            <div class="modal">
+                <div class="modal__window">
+                    <div class="modal__content">
+                        <p>Сообщение отправлено</p>
+                        <button class="btn modal__close">Закрыть</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/script.js"></script>
