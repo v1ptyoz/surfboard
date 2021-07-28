@@ -61,8 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
             element.classList.add("pager__link--active");
         }
 
-
-
         let reviewIndex = 0;
         let reviews = document.querySelectorAll('.reviews__item');
         let pagers = document.querySelectorAll('.pager__link');
@@ -81,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 reviews.forEach(element => {
                     hide(element);
                 })
-                hideAllActive();
+                element.classList.remove("pager__link--active");
                 showFlex(reviews[reviewIndex]);
                 setActive(pagers[reviewIndex]);
             })
