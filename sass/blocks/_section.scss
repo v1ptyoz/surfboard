@@ -32,7 +32,8 @@
 
 @media (max-width: 768px) {
     .section {
-        min-height: auto;
+        min-height: 0;
+        height: auto;
     }
     .section__subtitle {
         padding: 0 16rem;
