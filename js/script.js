@@ -103,12 +103,14 @@ document.addEventListener('DOMContentLoaded', function() {
         items.forEach(item => {
             const itemArrow = item.querySelector('.team__arrow');
             const itemContent = item.querySelector('.team__content');
+            const itemImg = item.querySelector('.team__img');
             item.addEventListener('click', (event) => {
                 event.preventDefault();
                 if (itemContent.classList.contains('team__content--active')) {
                     itemContent.classList.remove('team__content--active');
                     itemArrow.classList.remove('team__arrow--active');
                     itemContent.style.height = 0 + "px";
+                    itemImg.style.height = 0 + "px";
 
 
                 } else {
@@ -120,6 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     itemArrow.classList.add('team__arrow--active');
                     itemContent.classList.add('team__content--active');
                     itemContent.style.height = itemContent.scrollHeight + "px";
+                    itemImg.style.height = itemImg.scrollHeight + "px";
                 }
             })
         })
