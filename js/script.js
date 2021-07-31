@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     modal();
 
-    function sendData() {
+    function addEventListenerToSubmitForm() {
         const form = document.querySelector('.form');
         const modal = document.querySelector('.modal');
         const modalContent = document.querySelector('.modal__content p');
@@ -154,9 +154,9 @@ document.addEventListener('DOMContentLoaded', function() {
             xhr.setRequestHeader('content-type', 'application/json');
             xhr.responseType == 'json';
             const formData = new FormData(form);
-            const data = JSON.stringify(Object.fromEntries(formData.entries()));
-
-            xhr.send(data);
+            const data = Object.fromEntries(formData.entries());
+            data["to"] = "email@example.com"; // хардкодим мыло
+            xhr.send(JSON.stringify(data));
 
             xhr.addEventListener('load', () => {
                 const res = JSON.parse(xhr.responseText);
@@ -164,6 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (res.status == 1) {
                     modalContent.textContent = res.message;
                     showFlex(modal);
+                    form.reset();
                 } else {
                     modalContent.textContent = res.message || "Что-то пошло не так...";
                     showFlex(modal);
@@ -173,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
 
-    sendData();
+    addEventListenerToSubmitForm();
 
     function showFlex(element) {
         element.style.display = 'flex';
