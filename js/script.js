@@ -114,7 +114,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     itemArrow.classList.remove('team__arrow--active');
                     itemContent.style.height = 0 + "px";
                     if (isTabletOrMobile) {
-                        console.log('is tablet');
                         itemImg.style.height = 0 + "px";
                     }
                 } else {
