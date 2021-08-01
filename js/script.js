@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     itemArrow.classList.remove('team__arrow--active');
                     itemContent.style.height = 0 + "px";
                     if (isTabletOrMobile) {
+                        console.log('is tablet');
                         itemImg.style.height = 0 + "px";
                     }
                 } else {
@@ -121,9 +122,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         element.style.height = 0 + "px"
                         element.classList.remove('team__content--active')
                     });
-                    itemsImgs.forEach(image => {
-                        image.style.height = 0 + "px";
-                    })
+                    if (isTabletOrMobile) {
+                        itemsImgs.forEach(image => {
+                            image.style.height = 0 + "px";
+                        })
+                    }
                     arrows.forEach(element => element.classList.remove('team__arrow--active'));
                     itemArrow.classList.add('team__arrow--active');
                     itemContent.classList.add('team__content--active');
