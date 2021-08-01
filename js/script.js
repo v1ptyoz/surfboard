@@ -99,20 +99,24 @@ document.addEventListener('DOMContentLoaded', function() {
         const itemsContent = document.querySelectorAll('.team__content');
         itemsContent.forEach(element => element.style.height = 0 + "px");
         arrows.forEach(element => element.classList.remove('team__arrow--active'));
+        let isTabletOrMobile = document.body.clientWidth <= 768;
+        console.log(isTabletOrMobile);
 
         items.forEach(item => {
             const itemArrow = item.querySelector('.team__arrow');
             const itemContent = item.querySelector('.team__content');
             const itemImg = item.querySelector('.team__img');
+
             item.addEventListener('click', (event) => {
                 event.preventDefault();
+                let isActive;
                 if (itemContent.classList.contains('team__content--active')) {
                     itemContent.classList.remove('team__content--active');
                     itemArrow.classList.remove('team__arrow--active');
                     itemContent.style.height = 0 + "px";
-                    itemImg.style.height = 0 + "px";
-
-
+                    if (isTabletOrMobile) {
+                        itemImg.style.height = 0 + "px";
+                    }
                 } else {
                     itemsContent.forEach(element => {
                         element.style.height = 0 + "px"

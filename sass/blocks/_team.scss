@@ -19,10 +19,15 @@
     flex-direction: column;
 }
 
+.team__title {
+    order: 0;
+}
+
 .team__img {
     margin-bottom: 2.1rem;
     order: -1;
     transition: height .3s ease;
+    overflow: hidden;
 }
 
 .team__content {
@@ -89,10 +94,9 @@
     .team__img {
         height: 0;
         order: 2;
-        overflow: hidden;
     }
     .team__content--active+.team__img {
-        display: block;
+        height: 100%;
     }
     .team__content {
         height: 0;
