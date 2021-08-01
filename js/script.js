@@ -97,10 +97,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const items = document.querySelectorAll('.team__item');
         const arrows = document.querySelectorAll('.team__arrow');
         const itemsContent = document.querySelectorAll('.team__content');
+        const itemsImgs = document.querySelectorAll('.team__img');
         itemsContent.forEach(element => element.style.height = 0 + "px");
         arrows.forEach(element => element.classList.remove('team__arrow--active'));
         let isTabletOrMobile = document.body.clientWidth <= 768;
-        console.log(isTabletOrMobile);
 
         items.forEach(item => {
             const itemArrow = item.querySelector('.team__arrow');
@@ -109,7 +109,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             item.addEventListener('click', (event) => {
                 event.preventDefault();
-                let isActive;
                 if (itemContent.classList.contains('team__content--active')) {
                     itemContent.classList.remove('team__content--active');
                     itemArrow.classList.remove('team__arrow--active');
@@ -122,6 +121,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         element.style.height = 0 + "px"
                         element.classList.remove('team__content--active')
                     });
+                    itemsImgs.forEach(image => {
+                        image.style.height = 0 + "px";
+                    })
                     arrows.forEach(element => element.classList.remove('team__arrow--active'));
                     itemArrow.classList.add('team__arrow--active');
                     itemContent.classList.add('team__content--active');
