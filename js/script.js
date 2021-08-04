@@ -187,6 +187,68 @@ document.addEventListener('DOMContentLoaded', function() {
 
     addEventListenerToSubmitForm();
 
+    function addEventListenerForCatalogTitles() {
+        const catalogList = document.querySelector('.catalog__list');
+        const catalogTitles = document.querySelectorAll('.catalog__title');
+
+        function getAvaibleWidth() {
+            const CONTENT_BLOCK_MAX_WIDTH = 524;
+            const titleWidth = catalogTitles[0].offsetWidth;
+            const avaibleWidth = window.innerWidth - (titleWidth * catalogTitles.length);
+            return avaibleWidth > CONTENT_BLOCK_MAX_WIDTH ? CONTENT_BLOCK_MAX_WIDTH : avaibleWidth;
+        }
+
+        function hideActive(element) {
+            let elementContent = element.querySelector('.catalog__content');
+            elementContent.style.width = 0;
+            element.classList.remove('catalog__item--active');
+        }
+
+
+        catalogList.addEventListener('click', (event) => {
+            event.preventDefault();
+            if (event.target.classList.contains('catalog__header')) {
+                let item = event.target.closest('.catalog__item');
+                let itemTitle = item.querySelector('.catalog__title');
+                let itemContent = item.querySelector('.catalog__content');
+                let activeElements = catalogList.querySelectorAll('.catalog__item--active');
+                if (item.classList.contains('catalog__item--active')) {
+                    hideActive(item)
+                    return;
+                }
+                activeElements.forEach(element => hideActive(element))
+
+                item.classList.add('catalog__item--active');
+                if (getAvaibleWidth() > 480) {
+                    itemContent.style.width = getAvaibleWidth() + "px";
+                } else {
+                    itemContent.style.width = "100%";
+                }
+            }
+        })
+
+
+
+
+
+        // catalogTitles.forEach((catalogTitle, index) => {
+        //     catalogTitle.addEventListener('click', (event) => {
+        //         event.preventDefault();
+        //         if (catalogItems[index].classList.contains('catalog__item--active')) {
+        //             catalogItems[index].classList.remove('catalog__item--active');
+        //             return
+        //         } else {
+        //             catalogItems.forEach(item => {
+        //                 item.classList.remove('catalog__item--active');
+        //             });
+        //             catalogItems[index].classList.add('catalog__item--active');
+        //         }
+        //     })
+        // })
+    }
+
+    addEventListenerForCatalogTitles();
+
     function showFlex(element) {
         element.style.display = 'flex';
     }
@@ -195,6 +257,13 @@ document.addEventListener('DOMContentLoaded', function() {
         element.style.display = 'none';
     }
 
+    function yMapConfig() {
+        const map = new ymaps.Map('footer__map', {
+            center: [48, 135],
+            zoom: 14
+        })
+    }
 
+    ymaps.ready(yMapConfig);
 
 });
