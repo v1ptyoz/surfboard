@@ -259,11 +259,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function yMapConfig() {
         const map = new ymaps.Map('footer__map', {
-            center: [48, 135],
+            center: [48.479003, 135.071509],
             zoom: 14
         })
+        const markerCoords = [
+            [48.478671, 135.065763],
+            [48.487549, 135.069703],
+        ];
+
+        const markersSettings = new ymaps.GeoObjectCollection({}, {
+            draggable: false,
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.svg',
+            iconImageSize: [58, 73],
+            iconImageOffset: [-35, -52]
+        });
+        markerCoords.forEach(coord => {
+            markersSettings.add(new ymaps.Placemark(coord));
+        })
+        map.geoObjects.add(markersSettings);
+
     }
 
     ymaps.ready(yMapConfig);
 
-});
+
+
+    // videoPlayer();
+})
