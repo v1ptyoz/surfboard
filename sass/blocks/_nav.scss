@@ -12,6 +12,10 @@
     color: #ffffff;
 }
 
+.nav__link:hover {
+    text-decoration: underline;
+}
+
 .nav__close {
     display: none;
 }

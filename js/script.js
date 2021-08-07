@@ -1,7 +1,6 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function() {
-
     function toggleMenu() {
         let menu = document.querySelector('.nav--vertical');
         let menuOpenBtn = document.querySelector('.header__menu-icon');
@@ -15,6 +14,17 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
             menu.classList.remove('nav-show');
         })
+
+        const links = document.querySelectorAll('.nav--vertical .nav__link');
+        const sections = document.querySelectorAll('section');
+
+        links.forEach((link, index) => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                sections[index + 1].scrollIntoView({ behavior: "smooth" });
+                menu.classList.remove('nav-show');
+            })
+        });
     }
     toggleMenu();
 

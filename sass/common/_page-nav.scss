@@ -35,6 +35,16 @@
     border: .2rem solid #ffffff;
 }
 
+.page-nav__list--dark .page-nav__item .page-nav__link {
+    background-color: #666666;
+}
+
+.page-nav__list--dark .page-nav__item:hover,
+.page-nav__list--dark .page-nav__item:focus,
+.page-nav__list--dark .page-nav__item--active {
+    border: .2rem solid #666666;
+}
+
 @media (max-width: 768px) {
     .page-nav {
         display: none;

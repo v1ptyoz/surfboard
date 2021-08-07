@@ -8,6 +8,11 @@ html {
     font-family: 'Alegreya Sans', sans-serif;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 a {
     text-decoration: none;
 }
@@ -39,9 +44,16 @@ img {
     min-width: 100%;
 }
 
-.wrapper {}
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+}
 
-.wrapper__content {}
+.wrapper__content {
+    height: 100%;
+    transition: transform 1s;
+    will-change: transform;
+}
 
 .container {
     width: 95%;
@@ -54,6 +66,12 @@ img {
     .container {
         max-width: 768px;
         padding: 0 1rem;
+    }
+    .wrapper {
+        height: auto;
+    }
+    .wrapper__content {
+        height: auto;
     }
 }
 
